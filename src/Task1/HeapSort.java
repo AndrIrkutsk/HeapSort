@@ -1,15 +1,6 @@
 package Task1;
 
 public class HeapSort {
-    public static void main(String[] args) {
-        int[] array = new int[]{ 4, 2, 5, 8, 1, 9, 2, 3, 6, 8, 5 };
-        sort(array); // 1 2 2 3 4 5 5 6 8 8 9
-
-        for (int j : array) {
-            System.out.print(j + " ");
-        }
-    }
-
     public static void sort(int[] array) {
         // построение кучи (перегруппируем массив)
         for (int i = array.length / 2 - 1; i >= 0; i--)
